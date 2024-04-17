@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'Irctcapi',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -83,6 +84,8 @@ DATABASES = {
         'PORT': '3306',       # Or your MySQL port
     }
 }
+
+AUTH_USER_MODEL = 'Irctcapi.CustomUser'
 
 
 # Password validation
